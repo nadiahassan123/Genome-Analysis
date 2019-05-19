@@ -1,0 +1,19 @@
+#!/bin/bash -l
+#SBATCH -A g2019003
+#SBATCH -p core
+#SBATCH -n 2
+#SBATCH -t 8:00:00
+#SBATCH -J bwa_rna_seq_reads_1
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user Nadia_Hassan.Shamas.1379@student.uu.se
+
+# Load modules
+module load bioinfo-tools
+module load bwa/0.7.17
+module load samtools/1.6
+
+bwa index /home/nadia/pilon.fasta
+bwa mem -t 2 /home/nadia/pilon.fasta \
+    /home/nadia/genome_analysis/data/RNA/RNA-Seq_Serum/trim_paired_ERR1797970_pass_1.fastq.gz \
+    /home/nadia/genome_analysis/data/RNA/RNA-Seq_Serum/trim_paired_ERR1797970_pass_2.fastq.gz \
+    | samtools sort -@ 4 -T tmp6 -O BAM -o RNA-Seq_Serum_replicate_2.bam -
