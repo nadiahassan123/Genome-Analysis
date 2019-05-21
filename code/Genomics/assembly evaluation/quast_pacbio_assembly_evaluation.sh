@@ -13,5 +13,5 @@ module load quast/4.5.4
 
 # Your commands
 quast.py /home/nadia/efaecium-pacbio2/efaecium.contigs.fasta \
--o //home/nadia/genome_analysis/data/DNA/Quast/ \
+-o //home/nadia/genome_analysis/data/DNA/PacBio_assembly_evaluation/Quast/ \
 -R /home/nadia/refrence_genome.fasta
