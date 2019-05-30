@@ -1,0 +1,5 @@
+Database	Plasmid	Identity	Query / Template length	Contig	Position in contig	Note	Accession number
+gram_positive	rep1	100.0	1491 / 1491	tig00000021_pilon	10528..12018	repE(pAMbeta1)	AF007787
+gram_positive	rep17	100.0	1041 / 1041	tig00000027_pilon	11329..12369	CDS29(pRUM)	AF507977
+gram_positive	rep2	100.0	1494 / 1494	tig00000021_pilon	32605..34098	ORF(E.faeciumContig1183)	JDOE
+gram_positive	repUS15	98.75	1041 / 1041	tig00000018_pilon	11196..12236	ORF(E.faecium287)	NZAAAK010000287
